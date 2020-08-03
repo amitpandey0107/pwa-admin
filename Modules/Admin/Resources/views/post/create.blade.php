@@ -1,8 +1,8 @@
 @extends('admin::layouts.master')
 
-@section('admin::title', 'Customer')
+@section('admin::title', 'Post')
 
-@section('admin::pagetitle', 'Add Customer')
+@section('admin::pagetitle', 'Add Post')
 
 @section('admin::content')
 
@@ -65,6 +65,19 @@
     </div>
 
     <div class="content">
+        <style>
+            .form-group input[type=file] {
+    opacity: 1;
+    position: relative;
+    top: initial;
+    right: initial;
+    bottom: initial;
+    left: initial;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+        </style>
         <div class="container-fluid">
             <div class="row">                
                 <div class="col-md-12">
@@ -74,26 +87,26 @@
                             <div class="card-icon">
                                 <i class="material-icons">assignment</i>
                             </div>
-                            <h4 class="card-title">Customer Registration
-                                <a href="{{ route('customers') }}">
+                            <h4 class="card-title">Add New Post
+                                <a href="{{ route('post') }}">
                                     <button class="btn btn-success" style="float:right">Back</button>
                                 </a>
                             </h4>
                         </div>
                         <div class="card-body">				           
 
-                            <form method="POST" class="form-horizontal" id="customerForm" enctype="multipart/form-data" action="{{ route('customer-add') }}">
+                            <form method="POST" class="form-horizontal" id="customerForm" enctype="multipart/form-data" action="{{ route('post-add') }}">
                                 @csrf()
                                 <div class="row">
                                     <div class="col-sm-2 col-form-label">
-                                        <label for="name" class="bmd-label-floating">Name *</label>
+                                        <label for="title" class="bmd-label-floating">Title *</label>
                                     </div>	
                                     <div class="col-sm-10">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" name="name" id="firstname" maxlength="20" class="form-control required" autocomplete="off"  value="{{ old('name') }}">
-                                            @if ($errors->has('name'))
-                                            <span class="error" role="name">
-                                                <strong>{{ $errors->first('name') }}</strong>
+                                            <input type="text" name="title" id="title" maxlength="50" class="form-control required" autocomplete="off"  value="{{ old('title') }}">
+                                            @if ($errors->has('title'))
+                                            <span class="error" role="title">
+                                                <strong>{{ $errors->first('title') }}</strong>
                                             </span>
                                             @endif
                                         </div>
@@ -101,75 +114,41 @@
                                 </div>
 
                                 <div class="row">
-                                    <label class="col-sm-2 col-form-label">Email *</label>
+                                    <label class="col-sm-2 col-form-label">Description *</label>
                                     <div class="col-sm-10">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" name="email" id="email" maxlength="30" class="form-control required email" autocomplete="off" value="{{ old('email') }}">
-                                            @if ($errors->has('email'))
-                                            <span class="error" role="email">
-                                                <strong>{{ $errors->first('email') }}</strong>
+                                            <input type="text" name="description" id="description" maxlength="330" class="form-control required" autocomplete="off" value="{{ old('description') }}">
+                                            @if ($errors->has('description'))
+                                            <span class="error" role="description">
+                                                <strong>{{ $errors->first('description') }}</strong>
                                             </span>
                                             @endif
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-sm-2 col-form-label">Phone Number *</label>
+                                    <label class="col-sm-2 col-form-label">Category *</label>
                                     <div class="col-sm-10">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" name="mobile_number" id="phone" maxlength="12" class="form-control required number" autocomplete="off" value="{{ old('mobile_number') }}">
-                                            @if ($errors->has('mobile_number'))
-                                            <span class="error" role="mobile_number">
-                                                <strong>{{ $errors->first('mobile_number') }}</strong>
+                                            <input type="text" name="category" id="phone" maxlength="12" class="form-control required number" autocomplete="off" value="{{ old('category') }}">
+                                            @if ($errors->has('category'))
+                                            <span class="error" role="category">
+                                                <strong>{{ $errors->first('category') }}</strong>
                                             </span>
                                             @endif
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="row">
-                                    <label class="col-sm-2 col-form-label">Date of Birth *</label>
+                                    <label class="col-sm-2 col-form-label">Thumbnail Image *</label>
                                     <div class="col-sm-10">
-                                        <div class="form-group bmd-form-group is-filled">
-                                            <input type="text" class="form-control datepicker required" maxlength="20" autocomplete="off" name="date_of_birth" id="date_of_birth" value="{{ old('date_of_birth') }}">
-                                            @if ($errors->has('date_of_birth'))
-                                            <span class="error" role="date_of_birth">
-                                                <strong>{{ $errors->first('date_of_birth') }}</strong>
-                                            </span>
-                                            @endif
+                                        <div class="form-group bmd-form-group">
+                                            <input type="file" name="file" id="file" accept="image/png, image/jpeg" />                                            
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="row">
-                                    <label class="col-sm-2 col-form-label label-checkbox">Gender</label>
-                                    <div class="col-sm-10 checkbox-radios">
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" value="Male" name="gender" id="gendermale"> Male
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" value="Female" name="gender" id="genderfemale"> Female
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" value="Other" name="gender" id="genderother"> Other
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
+                               
                                 <div class="row">
                                     <div class="col-sm-2 col-form-label">
                                         <div class="card-footer ">
@@ -199,49 +178,17 @@
     $(document).ready(function () {       
         $('#customerForm').validate({
             rules:{
-                name:"required",
-                email: {
-                    required: true,
-                    email:true
-                },
-                mobile_number: {
-                    required: true,
-                    minlength:9,
-                    maxlength:13,
-                    number: true
-                },
-                date_of_birth:"required",
-                gender:"required",
+                title:"required",                
+                description:"required",
+                category:"required",
             }, 
             messages:{
-                name:"Please enter your name",
-                email: {
-                    required: "please enter email address",
-                    email:"please enter a valid email address"
-                },
-                mobile_number: {
-                    required: "please enter mobile number",
-                    minlength: "mobile number must be greater then 9 digit",
-                    maxlength:"mobile number must be less then 12 digit",
-                    number: "mobile number must be a number"
-                },
-                date_of_birth:"please enter your date of birth",
-                gender:"please choose a gender",
-            },
-            errorPlacement: function(error, element) {
-                if ( element.is(":radio") ) {
-                    error.appendTo( element.parents('.checkbox-radios') );
-                } else { 
-                    error.insertAfter( element );
-                }
-            }
+                title:"please enter title",                
+                description:"please enter description",
+                category:"please enter category",
+            },            
         });
-        $(".datepicker").datepicker({
-            dateFormat: "yy-mm-dd",
-            maxDate: new Date(),
-            changeMonth: true,
-            changeYear: true
-        });
+       
     });
 </script>
 @endsection

@@ -30,7 +30,9 @@ Route::group(['middleware' => 'Isadmin'], function () {
         Route::post('/admin-change-password', 'AdminController@changePassword')->name('admin-change-password');
 
         // POST
-        Route::get('/post', 'AdminController@post')->name('post');
+        Route::get('/post', 'AdminController@posts')->name('post');
+        Route::get('/post-add', 'AdminController@createPosts')->name('post-add');
+        Route::post('/post-add', 'AdminController@postsAdd')->name('post-add');
         Route::post('/user-status/{slug}', 'AdminController@userStatus')->name('user-status');
         
     });
