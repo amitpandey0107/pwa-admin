@@ -1,0 +1,39 @@
+.statusBtn {
+    width: 120px;
+    color: #fff !important;
+    text-align: center;
+}
+
+.checkbox-radios label.error {
+    /* position: absolute;
+    top: 39px;
+    width: 200px;
+    display: block;
+    left: 0;
+    color: red; */
+    font-size: .8rem;
+    color: #f44336;
+}
+
+.ui-datepicker {
+    z-index: 99 !important;
+}
+
+.simple-text.logo-mini img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.sidebar .logo a.logo-mini {
+    opacity: 1;
+    float: left;
+    width: 69px;
+    text-align: center;
+    margin-left: 23px;
+    margin-right: 15px;
+    height: 62px;
+    position: relative;
+    top: -12px;
+}

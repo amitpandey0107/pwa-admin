@@ -1,0 +1,486 @@
+
+@media (max-width:1439px) {
+.navbar .nav-item > a {
+   font-size: 16px;
+}
+.process-block:after {
+   background-size: 100%;
+   left: 0;
+   right: 0;
+}
+.how-it-works .block:first-child {
+   margin-top: 40px;
+}
+.how-it-works .block:nth-child(2) {
+   margin-top: 50px;
+}
+.how-it-works .block:last-child {
+   margin-top: 40px;
+}
+}
+
+@media (max-width:1199px) {
+.navbar .nav-item {
+   margin-right: 5px;
+}
+.navbar .nav-item > a {
+   font-size: 14px;
+}
+.navbar .nav-item > a .icon {
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   font-size: 16px;
+}
+.welcome-sec {
+   padding-top: 80px;
+}
+.how-it-works .block .block-title {
+   font-size: 22px;
+}
+.how-it-works .block:first-child {
+   margin-top: 50px;
+}
+.how-it-works .block:nth-child(2) {
+   margin-top: 40px;
+}
+.how-it-works .block:last-child {
+   margin-top: 55px;
+}
+.btn.app-store {
+   font-size: 14px;
+   min-width: 215px;
+}
+.btn.app-store strong {
+   font-size: 20px;
+}
+.btn.app-store + .btn.app-store {
+   margin-left: 10px;
+}
+.plan-block .block .inner-block .plan-features {
+   font-size: 18px;
+}
+.account-sec .img-block {
+   padding-right: 0;
+   padding-left: 0;
+}
+.account-sec .img-block img {
+   position: relative;
+}
+}
+
+@media (max-width:991px) {
+.site-header .container, .main-footer .container {
+   max-width: 100%;
+}
+nav.navbar {
+   padding: 15px;
+}
+.navbar-toggler {
+   color: #fff;
+   font-size: 40px;
+   padding: 0;
+   border: none;
+   line-height: 30px;
+   vertical-align: middle;
+   margin-left: 15px;
+}
+.navbar-toggler:focus {
+   outline: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+   width: auto;
+   height: auto;
+   line-height: 40px;
+}
+.main-menu {
+   position: absolute;
+   top: 100%;
+   margin-top: 15px;
+   left: -15px;
+   right: -15px;
+   background: rgba(255, 255, 255, 0.9);
+}
+.main-menu > ul.navbar-nav {
+   padding: 15px;
+   border-top: 5px solid #7ebc59;
+   min-height: 100vh;
+}
+.navbar .nav-item {
+   padding: 15px;
+}
+.navbar .nav-item > a {
+   font-size: 18px;
+   color: #2f3c43;
+   font-weight: 500;
+}
+.navbar .nav-item > a .icon {
+   font-size: 24px;
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+}
+.home-slider .slider-content h2 {
+   font-size: 50px;
+}
+.home-slider .slider-content {
+   font-size: 20px;
+}
+.welcome-sec {
+   padding-top: 40px;
+}
+.welcome-sec .block {
+   padding-right: 15px;
+   padding-bottom: 20px;
+}
+.block-title {
+   margin-bottom: 20px;
+}
+.welcome-sec p {
+   margin-bottom: 15px;
+}
+.welcome-sec .welcome-img {
+   text-align: center;
+}
+.welcome-sec .welcome-img img {
+   position: relative;
+}
+.how-it-works {
+   padding: 40px 0 10px;
+}
+.heading {
+   margin-bottom: 40px;
+}
+.process-block:after {
+   content: none;
+}
+.process-block {
+   margin-top: 0;
+}
+.how-it-works .block:first-child, .how-it-works .block:nth-child(2), .how-it-works .block:last-child {
+   margin-top: 0;
+}
+.how-it-works .block .block-icon {
+   margin-bottom: 20px;
+}
+.how-it-works .block .block-title {
+   margin-bottom: 15px;
+}
+.app-download-sec .block {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+.app-download-sec .block p {
+   margin-bottom: 15px;
+   padding-right: 0;
+}
+.app-download-sec .mobile-img {
+   position: inherit;
+}
+.app-download-sec .mobile-img img {
+   top: 40px;
+   right: 0;
+   z-index: -1;
+}
+.plan-sec {
+   padding-top: 40px;
+}
+.plan-block {
+   margin-bottom: -70px;
+}
+.plan-block .block:not(:last-child) {
+   margin-bottom: 30px;
+}
+.plan-block .block .inner-block .block-type {
+   padding: 30px 15px 100px;
+}
+.plan-block .block .inner-block .btn {
+   line-height: 30px;
+}
+.testimonial-sec {
+   padding-top: 140px;
+}
+.main-footer {
+   font-size: 16px;
+   padding: 40px 0;
+}
+.main-footer .footer-links li {
+   margin-right: 10px;
+   padding-right: 10px;
+}
+.main-footer .newslette-form {
+   flex-wrap: wrap;
+}
+.main-footer .newslette-form input {
+   height: 60px;
+}
+.main-footer .newslette-form .btn {
+   height: 60px;
+   margin-left: 0;
+   margin-top: 15px;
+}
+.footer-bottom {
+   padding: 15px 0;
+   font-size: 16px;
+}
+.full-width .img-block img {
+   position: relative;
+}
+.full-width .img-block {
+   padding: 0;
+   height: auto;
+}
+.app-download .btn.app-store + .btn.app-store {
+   margin-left: 0;
+}
+.block-shadow {
+   font-size: 16px;
+}
+.block-shadow h4 {
+   font-size: 18px;
+}
+.contact-info, .app-info {
+   padding-top: 40px;
+}
+}
+
+@media (max-width:767px) {
+.m-show {
+   display: block;
+}
+.m-hide {
+   display: none;
+}
+body {
+   font-size: 14px;
+}
+.btn {
+   min-width: 150px;
+   font-size: 16px;
+   padding: 15px 5px;
+}
+.top-bar a span:not(.icon) {
+   display: none;
+}
+nav.navbar {
+   padding: 10px 15px;
+}
+.navbar .navbar-brand {
+   width: 160px;
+}
+.main-menu {
+   margin-top: 10px;
+}
+.account-option .btn {
+   padding: 15px;
+   min-width: 100px;
+}
+.home-slider .slider-content h2 {
+   font-size: 30px;
+}
+.home-slider .slider-content {
+   font-size: 16px;
+   line-height: 28px;
+}
+.home-slider .slider-content p {
+   margin-bottom: 30px;
+}
+.home-slider.owl-carousel .owl-dots {
+   bottom: 20px;
+}
+.block-title {
+   font-size: 20px;
+}
+.block-title span {
+   font-size: 26px;
+}
+.welcome-sec p strong {
+   font-size: 16px;
+}
+.heading h2 {
+   font-size: 20px;
+}
+.heading h2:before, .heading h2:after {
+   width: 30px;
+   background-size: 28px;
+   top: 0;
+}
+.heading h2:before {
+   margin-left: 0;
+   margin-right: 5px;
+}
+.heading h2:after {
+   margin-right: 0;
+   margin-left: 5px;
+}
+.app-download-sec {
+   min-height: 600px;
+}
+.app-download-sec .block {
+   padding-top: 40px;
+}
+.app-download-sec .block p strong {
+   font-size: 16px;
+}
+.btn.app-store {
+   display: block;
+   max-width: 225px;
+}
+.btn.app-store + .btn.app-store {
+   margin-left: 0;
+}
+.app-download-sec .mobile-img img {
+   top: 120px;
+}
+.plan-block {
+   padding: 0 15px;
+   margin-bottom: -60px;
+}
+.plan-block .block .inner-block .block-type {
+   padding: 30px 15px 70px;
+}
+.plan-block .block .inner-block .plan-features {
+   font-size: 16px;
+}
+.plan-block .block .inner-block .plan-price {
+   font-size: 28px;
+}
+.plan-block .block .inner-block .block-type {
+   font-size: 20px;
+}
+.testimonial-sec {
+   padding-top: 100px;
+}
+.testimonial-slider {
+   font-size: 16px;
+   line-height: 24px;
+}
+.testimonial-slider .client-img img {
+   width: 80px;
+   height: 80px;
+}
+.main-footer {
+   font-size: 14px;
+}
+.main-footer h3 {
+   margin-bottom: 15px;
+   font-size: 20px;
+}
+.main-footer .social-link {
+   margin-bottom: 35px;
+}
+.footer-bottom {
+   font-size: 14px;
+   padding: 10px 0;
+}
+.big-text {
+   font-size: 18px;
+   line-height: 32px;
+}
+.about-top .heading {
+   margin-bottom: 20px;
+}
+.content-box {
+   text-align: center !important;
+}
+.content-box .round-img {
+   max-width: 150px;
+   margin-bottom: 20px;
+}
+.padd-sec {
+   padding: 40px 0;
+}
+.full-width .content-block {
+   padding: 40px 15px;
+   min-height: inherit;
+}
+.block-shadow {
+   margin-top: 100px;
+   margin-bottom: 30px;
+}
+.block-shadow:last-child {
+   margin-bottom: 0;
+}
+.block-shadow .icon {
+   top: -100px;
+}
+.app-download h2 {
+   font-size: 22px;
+}
+.account-sec {
+   padding: 30px 0;
+}
+.account-sec .block-title {
+   margin-bottom: 40px;
+}
+.account-sec .form-block .form-info {
+   margin-bottom: 30px;
+   font-size: 16px;
+}
+.more-option {
+   margin-top: 40px;
+}
+.more-option .social-media {
+   flex-wrap: wrap;
+}
+.more-option .social-media a + a {
+   margin-left: 0;
+   margin-top: 15px;
+}
+.more-option .or {
+   font-size: 20px;
+}
+.account-sec .form-block {
+   padding: 40px 20px;
+}
+.account-sec .form-block .form-submit {
+   margin-top: 30px 0 0;
+}
+.bottom-info {
+   font-size: 16px;
+}
+.page-banner {
+   height: 320px;
+}
+}
+
+@media screen and (max-width:413px) {
+.navbar .navbar-brand {
+   width: 120px;
+   margin-right: 10px;
+}
+.navbar-toggler {
+   margin-left: 10px;
+   font-size: 30px;
+}
+.account-option .btn {
+   padding: 12px 5px;
+   font-size: 13px;
+}
+.home-slider .slider-content h2 {
+   font-size: 24px;
+}
+.home-slider .slider-content .btn {
+   width: 100%;
+}
+.home-slider .slider-content .btn + .btn {
+   margin-left: 0;
+   margin-top: 15px;
+}
+.heading h2 {
+   font-size: 18px;
+}
+.app-download-sec {
+   min-height: 500px;
+}
+.plan-block .block .inner-block .block-type {
+   padding: 20px 15px 60px;
+}
+.main-footer .footer-links li {
+   margin-right: 5px;
+   padding-right: 5px;
+}
+.social-link li:not(:first-child) {
+   margin-left: 10px;
+}
+}

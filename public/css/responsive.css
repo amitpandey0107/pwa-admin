@@ -1,0 +1,989 @@
+
+@media (max-width:1439px) {
+.navbar .nav-item > a {
+   font-size: 16px;
+   padding: 0;
+}
+   .navbar .navbar-brand{
+      width: 200px;
+   }
+   .navbar .nav-item{
+      margin-right: 15px;
+   }
+   .account-option .btn{
+      width: 115px;
+   }
+   .account-option .btn + .btn{
+      margin-left: 10px;
+   }
+   .account-option .btn.user-login{
+      width: 145px;
+   }
+.process-block:after {
+   background-size: 100%;
+   left: 0;
+   right: 0;
+}
+.how-it-works .block:first-child {
+   margin-top: 40px;
+}
+.how-it-works .block:nth-child(2) {
+   margin-top: 50px;
+}
+.how-it-works .block:last-child {
+   margin-top: 40px;
+}
+}
+
+@media (max-width:1199px) {
+.navbar .nav-item {
+   margin-right: 5px;
+}
+.navbar .nav-item > a {
+   font-size: 14px;
+}
+.navbar .nav-item > a .icon {
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   font-size: 16px;
+}
+ 
+   .header-inner{
+      padding: 0 15px;
+   }   
+nav.navbar {
+   padding: 15px;
+}
+.navbar-toggler {
+   color: #fff;
+   font-size: 40px;
+   padding: 0;
+   border: none;
+   line-height: 30px;
+   vertical-align: middle;
+   margin-left: auto;
+}
+.navbar-toggler:focus {
+   outline: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+   width: auto;
+   height: auto;
+   line-height: 40px;
+}
+.main-menu {
+   position: absolute;
+   top: 100%;
+   margin-top: 15px;
+   left: -15px;
+   right: -15px;
+   background: rgba(255, 255, 255, 0.9);
+}
+.main-menu > ul.navbar-nav {
+   padding: 15px;
+   border-top: 5px solid #7ebc59;
+   min-height: 100vh;
+}
+.navbar .nav-item {
+   padding: 15px;
+}
+.navbar .nav-item > a {
+   font-size: 18px;
+   color: #2f3c43;
+   font-weight: 500;
+}
+.navbar .nav-item > a .icon {
+   font-size: 24px;
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+}   
+   
+.welcome-sec {
+   padding-top: 80px;
+}
+.how-it-works .block .block-title {
+   font-size: 22px;
+}
+.how-it-works .block:first-child {
+   margin-top: 50px;
+}
+.how-it-works .block:nth-child(2) {
+   margin-top: 40px;
+}
+.how-it-works .block:last-child {
+   margin-top: 55px;
+}
+   .plan-block .block .inner-block .plan-price{
+      font-size: 24px;
+   }
+.btn.app-store {
+   font-size: 14px;
+   min-width: 215px;
+}
+.btn.app-store strong {
+   font-size: 20px;
+}
+.btn.app-store + .btn.app-store {
+   margin-left: 10px;
+}
+.plan-block .block .inner-block .plan-features {
+   font-size: 18px;
+}
+.account-sec .img-block {
+   padding-right: 0;
+   padding-left: 0;
+}
+.account-sec .img-block img {
+   position: relative;
+}
+   .account-right .box{
+      margin-bottom: 40px;
+   }
+   .account-right .box .table.food-planner td p{
+      max-width: 77%;
+   }
+   .account-sec .step ul li h4{
+      font-size: 15px;
+   }
+   .account-right .sub-step li a{
+      font-size: 16px;
+   }
+}
+
+@media (max-width:991px) {
+.site-header .container, .main-footer .container {
+   max-width: 100%;
+}
+   .header-inner{
+      padding: 0;
+   }
+nav.navbar {
+   padding: 15px;
+}
+.navbar-toggler {
+   color: #fff;
+   font-size: 40px;
+   padding: 0;
+   border: none;
+   line-height: 30px;
+   vertical-align: middle;
+   margin-left: auto;
+}
+.navbar-toggler:focus {
+   outline: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+   width: auto;
+   height: auto;
+   line-height: 40px;
+}
+.main-menu {
+   position: absolute;
+   top: 100%;
+   margin-top: 15px;
+   left: -15px;
+   right: -15px;
+   background: rgba(255, 255, 255, 0.9);
+}
+.main-menu > ul.navbar-nav {
+   padding: 15px;
+   border-top: 5px solid #7ebc59;
+   min-height: 100vh;
+}
+.navbar .nav-item {
+   padding: 15px;
+}
+.navbar .nav-item > a {
+   font-size: 18px;
+   color: #2f3c43;
+   font-weight: 500;
+}
+.navbar .nav-item > a .icon {
+   font-size: 24px;
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+}
+.home-slider .slider-content h2 {
+   font-size: 50px;
+}
+.home-slider .slider-content {
+   font-size: 20px;
+}
+.welcome-sec {
+   padding-top: 40px;
+}
+.welcome-sec .block {
+   padding-right: 15px;
+   padding-bottom: 20px;
+}
+.block-title {
+   margin-bottom: 20px;
+}
+.welcome-sec p {
+   margin-bottom: 15px;
+}
+.welcome-sec .welcome-img {
+   text-align: center;
+}
+.welcome-sec .welcome-img img {
+   position: relative;
+}
+.how-it-works {
+   padding: 40px 0 10px;
+}
+.heading {
+   margin-bottom: 40px;
+}
+.process-block:after {
+   content: none;
+}
+.process-block {
+   margin-top: 0;
+}
+.how-it-works .block:first-child, .how-it-works .block:nth-child(2), .how-it-works .block:last-child {
+   margin-top: 0;
+}
+.how-it-works .block .block-icon {
+   margin-bottom: 20px;
+}
+.how-it-works .block .block-title {
+   margin-bottom: 15px;
+}
+.app-download-sec .block {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+.app-download-sec .block p {
+   margin-bottom: 15px;
+   padding-right: 0;
+}
+.app-download-sec .mobile-img {
+   position: inherit;
+}
+.app-download-sec .mobile-img img {
+   top: 40px;
+   right: 0;
+   z-index: -1;
+}
+.plan-sec {
+   padding-top: 40px;
+}
+.plan-block {
+   margin-bottom: -70px;
+}
+.plan-block .block:not(:last-child) {
+   margin-bottom: 30px;
+}
+.plan-block .block .inner-block .block-type {
+   padding: 30px 15px 100px;
+}
+.plan-block .block .inner-block .btn {
+   line-height: 30px;
+}
+.testimonial-sec {
+   padding-top: 140px;
+}
+.main-footer {
+   font-size: 16px;
+   padding: 40px 0;
+}
+.main-footer .footer-links li {
+   margin-right: 10px;
+   padding-right: 10px;
+}
+.main-footer .newslette-form {
+   flex-wrap: wrap;
+}
+.main-footer .newslette-form input {
+   height: 60px;
+}
+.main-footer .newslette-form .btn {
+   height: 60px;
+   margin-left: 0;
+   margin-top: 15px;
+}
+.footer-bottom {
+   padding: 15px 0;
+   font-size: 16px;
+}
+.full-width .img-block img {
+   position: relative;
+}
+.full-width .img-block {
+   padding: 0;
+   height: auto;
+}
+.app-download .btn.app-store + .btn.app-store {
+   margin-left: 0;
+}
+.block-shadow {
+   font-size: 16px;
+}
+.block-shadow h4 {
+   font-size: 18px;
+}
+.contact-info, .app-info {
+   padding-top: 40px;
+}
+   .sidebar{
+      padding-bottom: 160px;
+      margin-bottom: 30px;
+      height: auto;
+   }
+   .children-details{
+      height: auto;
+   }
+   .sidebar .logedin-user-info{
+      margin-bottom: 15px;
+   }
+   .sidebar ul li a{
+      padding: 15px 15px;
+      font-size: 16px;
+   }
+   .account-right .box .table thead th, .account-right .box .table tbody td{
+      font-size: 16px;
+   }
+   .account-right .nav-tabs .nav-item{
+      font-size: 18px;
+      padding: 10px 10px;
+   }
+   .account-right .nav-tabs .nav-item.active{
+      padding: 15px 10px;
+   }
+   .account-right form .form-group{
+      margin-bottom: 25px;
+   }
+   .account-right form label{
+      font-size: 16px;
+   }
+   .parent-profile .parent-profile-field .form-control:disabled{
+      font-size: 18px;
+   }
+   .parent-profile{
+      padding-bottom: 30px;
+   }
+   .account-right .box-block .box-title h3{
+      font-size: 16px;
+   }
+   .account-right .box-block .box-details .info-line{
+      font-size: 16px;
+   }
+   .account-right .setting-option .setting-block .inner-block h4{
+      font-size: 20px;
+   }
+   .step-form .form-group label{
+      font-size: 16px;
+   }
+   .step-form .form-group .form-control{
+      font-size: 16px;
+   }
+   .sub-step li a{
+      font-size: 16px;
+   }
+   .round-radio input[type="radio"] + label:before{
+      width: 20px;
+      height: 20px;
+   }
+   .round-radio input[type="radio"] + label:after{
+      width: 12px;
+      height: 12px;
+      left: 4px;
+      top: 4px;
+   }
+   .round-radio input[type="radio"] + label{
+      line-height: 20px;
+      padding-left: 30px;
+      position: relative;
+      font-size: 16px;
+   }
+   .step-form .table th{
+      font-size: 16px;
+   }
+   .step-form .table td{
+      font-size: 16px;
+   }
+   .dashboard-menu{
+      display: block;
+   }
+   .dashboard-menu a{
+      display: inline-block;
+      width: 100%;
+      padding: 15px;
+      background: #368cbf;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+   .sidebar .sidebar-menu{
+      display: none;
+   }
+   .sidebar{
+      padding-bottom: 0;
+   }
+   .sidebar .select-plan-option:after{
+      content: none;
+   }
+   .sidebar .select-plan-option{
+      position: relative;
+      min-height: inherit;
+      background: #7ebc59;
+      padding: 15px;
+   }
+}
+
+@media (max-width:767px) {
+.m-show {
+   display: block;
+}
+.m-hide {
+   display: none;
+}
+body {
+   font-size: 14px;
+}
+.btn {
+   min-width: 150px;
+   font-size: 16px;
+   padding: 15px 5px;
+}
+.top-bar a span:not(.icon) {
+   display: none;
+}
+nav.navbar {
+   padding: 10px 15px;
+}
+.navbar .navbar-brand {
+   width: 160px;
+}
+.main-menu {
+   margin-top: 10px;
+}
+.account-option .btn {
+   padding: 15px;
+   min-width: 100px;
+}
+   .account-option .btn i{
+      top: 15px;
+   }   
+.home-slider .slider-content h2 {
+   font-size: 30px;
+}
+.home-slider .slider-content {
+   font-size: 16px;
+   line-height: 28px;
+}
+.home-slider .slider-content p {
+   margin-bottom: 30px;
+}
+.home-slider.owl-carousel .owl-dots {
+   bottom: 20px;
+}
+.block-title {
+   font-size: 20px;
+}
+.block-title span {
+   font-size: 26px;
+}
+.welcome-sec p strong {
+   font-size: 16px;
+}
+   .heading{
+      margin-bottom: 25px;
+   }
+.heading h2 {
+   font-size: 20px;
+}
+.heading h2:before, .heading h2:after {
+   width: 30px;
+   background-size: 28px;
+   top: 0;
+}
+.heading h2:before {
+   margin-left: 0;
+   margin-right: 5px;
+}
+.heading h2:after {
+   margin-right: 0;
+   margin-left: 5px;
+}
+.app-download-sec {
+   min-height: 600px;
+}
+.app-download-sec .block {
+   padding-top: 40px;
+}
+.app-download-sec .block p strong {
+   font-size: 16px;
+}
+.btn.app-store {
+   display: block;
+   max-width: 225px;
+}
+.btn.app-store + .btn.app-store {
+   margin-left: 0;
+}
+.app-download-sec .mobile-img img {
+   top: 120px;
+}
+.plan-block {
+   padding: 0 15px;
+   margin-bottom: -60px;
+}
+.plan-block .block .inner-block .block-type {
+   padding: 30px 15px 70px;
+}
+.plan-block .block .inner-block .plan-features {
+   font-size: 16px;
+}
+.plan-block .block .inner-block .plan-price {
+   font-size: 28px;
+}
+.plan-block .block .inner-block .block-type {
+   font-size: 20px;
+}
+.testimonial-sec {
+   padding-top: 100px;
+}
+.testimonial-slider {
+   font-size: 16px;
+   line-height: 24px;
+}
+.testimonial-slider .client-img img {
+   width: 80px;
+   height: 80px;
+}
+.main-footer {
+   font-size: 14px;
+}
+.main-footer h3 {
+   margin-bottom: 15px;
+   font-size: 20px;
+}
+.main-footer .social-link {
+   margin-bottom: 35px;
+}
+.footer-bottom {
+   font-size: 14px;
+   padding: 10px 0;
+}
+.big-text {
+   font-size: 18px;
+   line-height: 32px;
+}
+.about-top .heading {
+   margin-bottom: 20px;
+}
+.content-box {
+   text-align: center !important;
+}
+.content-box .round-img {
+   max-width: 150px;
+   margin-bottom: 20px;
+}
+.padd-sec {
+   padding: 40px 0;
+}
+.full-width .content-block {
+   padding: 40px 15px;
+   min-height: inherit;
+}
+.block-shadow {
+   margin-top: 100px;
+   margin-bottom: 30px;
+}
+.block-shadow:last-child {
+   margin-bottom: 0;
+}
+.block-shadow .icon {
+   top: -100px;
+}
+.app-download h2 {
+   font-size: 22px;
+}
+.account-sec {
+   padding: 30px 0;
+}
+.account-sec .block-title {
+   margin-bottom: 40px;
+}
+.account-sec .form-block .form-info {
+   margin-bottom: 30px;
+   font-size: 16px;
+}
+.more-option {
+   margin-top: 40px;
+}
+.more-option .social-media {
+   flex-wrap: wrap;
+}
+.more-option .social-media a + a {
+   margin-left: 0;
+   margin-top: 15px;
+}
+.more-option .or {
+   font-size: 16px;
+}
+.account-sec .form-block {
+   padding: 40px 20px;
+}
+.account-sec .form-block .form-submit {
+   margin-top: 30px 0 0;
+}
+.bottom-info {
+   font-size: 16px;
+}
+.page-banner {
+   height: 260px;
+}
+   .input-group textarea.form-control{
+      height: 180px;
+   }
+   .children-details{
+      padding: 30px 15px;
+   }
+   .account-right h5{
+      font-size: 18px;
+   }
+   .account-right form .form-group{
+      margin-bottom: 20px;
+   }
+   .account-right .box .table thead th, .account-right .box .table tbody td{
+      padding: 10px 7px;
+   }
+   .account-right .mt-5{
+      margin-top: 30px !important;
+   }
+   .account-right a.btn{
+      width: 100%;
+   }
+   .account-right .btn + .btn{
+      margin-left: 0;
+      margin-top: 15px;
+   }
+   .account-right form .form-check.assist-btn input[type="radio"] + label .img-icon{
+      height: 140px;
+   }
+   .account-right form .form-check.assist-btn input[type="radio"] + label .img-icon img{
+      max-height: 140px;
+   }
+   .account-right form .form-check.assist-btn input[type="radio"] + label .meal-name{
+      font-size: 15px;
+   }
+   .modal .close{
+      width: 50px;
+      height: 50px;
+      top: 0;
+      right: 0;
+      font-size: 40px;
+   }
+   .modal .modal-body{
+      padding: 60px 15px 0;
+   }
+   .modal form label{
+      font-size: 16px;
+   }
+   .modal .modal-footer{
+      padding: 15px 15px 30px;
+   }
+   .account-right form .form-check.assist-btn{
+      padding-bottom: 20px;
+   }
+   .sm-mb-15{
+      margin-bottom: 15px;
+   }
+   .sm-mt-15{
+      margin-top: 15px;
+   }
+   #add-child-meal{
+      margin-top: 15px;
+   }
+   .account-right form label, .account-right form .form-control, .account-right .form-group label{
+      font-size: 15px;
+   }
+   .account-right li.form-radio-emotion{
+      margin-right: 10px;
+   }
+   .account-right li.form-radio-emotion:last-child{
+      margin-right: 0;
+   }
+   .account-right form .form-radio input[type="radio"] + label{
+      padding: 15px;
+      font-size: 15px;
+   }
+   .account-right li.form-radio-emotion label{
+      font-size: 30px;
+   }
+   .account-right .box .table.food-planner td p{
+      max-width: 100%;
+   }
+   .account-right .box .table.food-planner td .add-food{
+      display: block;
+      max-width: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+   }
+   .account-right h5 .btn{
+      margin-top: 15px;
+   }
+   .input-group .form-control{
+      line-height: 40px;
+   }
+   .parent-profile .parent-info .user-icon{
+      width: 120px;
+      height: 120px;
+   }
+   .parent-profile-field{
+      padding: 0;
+   }
+   h4{
+      font-size: 20px;
+   }
+   .account-right form label, .account-right .form-group label{
+      margin-bottom: 10px;
+   }
+   .parent-profile .parent-profile-field .form-control:disabled{
+      font-size: 16px;
+   }
+   .parent-profile .change-password{
+      padding-left: 0;
+      padding-right: 0;
+   }
+   .account-right .notification-block{
+      font-size: 15px;
+   }
+   .account-right .notification-block .notification-icon{
+      margin-bottom: 15px;
+   }
+   .account-right .notification-block .notification-icon i{
+      font-size: 24px;
+   }
+   .account-right .notification-block h3{
+      font-size: 20px;
+   }
+   .account-right .box .table{
+      width: 600px;
+   }
+   .account-right .box .table .action a{
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+   }
+   .account-right .box .table thead th, .account-right .box .table tbody td{
+      font-size: 14px;
+   }
+   .button-block .btn{
+      width: 100%;
+   }
+   .button-block .btn + .btn{
+      margin-left: 0;
+      margin-top: 15px;
+   }
+   .account-right form .form-radio{
+      padding-bottom: 15px;
+   }
+   .select2-container .select2-selection--single .select2-selection__rendered{
+      line-height: 50px !important;
+   }
+   .account-right .box-block .box-title h3{
+      font-size: 14px;
+   }
+   .account-right .box-block .box-details .info-line{
+      font-size: 14px;
+   }
+   .account-right .box-block .box-details .info-line label{
+      padding: 0 5px;
+   }
+   .account-right .box-block .box-details .info-line span{
+      padding: 0 5px;
+   }
+   .account-right .box-block .box-details .info-line span img{
+      margin-bottom: 3px;
+      margin-top: 3px;
+   }
+   .account-right .form-check.img-btn input[type="checkbox"] + label .img-icon{
+      height: 120px;
+   }
+   .account-right .form-check.img-btn input[type="checkbox"] + label .img-icon img{
+      max-width: 80px;
+      max-height: 80px;
+   }
+   .account-right .form-check.img-btn input[type="checkbox"] + label .meal-name{
+      font-size: 16px;
+   }
+   .credit-card-box .panel-title{
+      font-size: 18px;
+   }
+   .credit-card-box .form-control{
+      line-height: 40px;
+   }
+   .account-sec .step{
+      margin-bottom: 0;
+      padding-right: 0;
+      padding-top: 67px;
+   }
+   .step-form .form-group{
+      margin-bottom: 20px;
+   }
+   .step-form .form-group label{
+      font-size: 14px;
+   }
+   .step-form .form-group .form-control{
+      font-size: 14px;
+   }
+   .step-form h4{
+      font-size: 18px;
+   }
+   .step-block-title{
+      margin-bottom: 30px;
+   }
+   .step-block-title h2{
+      font-size: 20px;
+   }
+   .account-sec .step ul{
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+   }
+   .account-sec .step ul li{
+      width: 100%;
+      margin-bottom: 10px;
+   }
+   .account-sec .step ul li span.number{
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 20px;
+   }
+   .account-sec .step ul li.allow span.number i{
+      line-height: 35px;
+   }
+   .account-sec .step ul li h4{
+      font-size: 10px;
+      margin-top: 10px;
+      padding-top: 0;
+   }
+   .account-sec .step ul li h4:before{
+      content: none;
+   }
+   .account-sec .step ul li:not(:first-child):before, .account-sec .step ul li:not(:last-child):after{
+      content: none;
+   }
+   .step-form{
+      padding: 20px 15px 30px;
+   }
+   .step-form .form-group .form-control{
+      line-height: 40px;
+   }
+   .sub-step{
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+   }
+   .sub-step li{
+      width: 100%;
+   }
+   .sub-step li a{
+      font-size: 14px;
+      padding: 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+   }
+   .sub-step li:first-child a{
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+   }
+   .sub-step li:last-child a{
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+   }
+   .sub-step li.active a{
+      padding: 15px 10px;
+   }
+   .radio-group .round-radio{
+      margin-top: 10px;
+   }
+   .radio-group .round-radio:last-child{
+      margin-right: 0;
+   }
+   .round-radio input[type="radio"] + label{
+      font-size: 14px;
+   }
+   .radio-btn input[type="radio"] + label{
+      font-size: 16px;
+      line-height: 24px;
+      height: 50px;
+   }
+   .amount-of-unit > input.form-control, .amount-of-unit > div{
+      width: 100%;
+   }
+   .amount-of-unit > div{
+      margin-top: 10px;
+   }
+   .step-summury table.summary-table{
+      width: 700px;
+   }
+   .step-summury table.summary-table > tbody > tr > td:first-child{
+      width: 200px;
+   }
+   .account-right form.step-form{
+      padding: 20px 0 30px;
+   }
+   .account-right .sub-step li a{
+      padding: 10px 10px;
+   }
+   .account-right .sub-step li.active a{
+      padding: 15px 10px;
+   }
+   .account-right .box-block .box-details .reports-form{
+      padding: 30px 15px;
+   }
+   .select-day .day-radio input[type="radio"] + label, .select-meal-type .meal-type-radio input[type="radio"] + label{
+      font-size: 16px;
+   }
+   .select-day .day-radio, .select-meal-type .meal-type-radio{
+      padding-bottom: 7px;
+   }
+}
+
+@media screen and (max-width:413px) {
+.navbar-toggler {
+   font-size: 30px;
+}
+.account-option .btn {
+   padding: 12px 5px;
+   font-size: 13px;
+}
+.home-slider .slider-content h2 {
+   font-size: 24px;
+}
+.home-slider .slider-content .btn {
+   width: 100%;
+}
+.home-slider .slider-content .btn + .btn {
+   margin-left: 0;
+   margin-top: 15px;
+}
+.heading h2 {
+   font-size: 18px;
+}
+.app-download-sec {
+   min-height: 500px;
+}
+.plan-block .block .inner-block .block-type {
+   padding: 20px 15px 60px;
+}
+.main-footer .footer-links li {
+   margin-right: 5px;
+   padding-right: 5px;
+}
+.social-link li:not(:first-child) {
+   margin-left: 10px;
+}
+}
