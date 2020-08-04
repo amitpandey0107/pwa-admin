@@ -26,7 +26,8 @@ $api->version('v1', [
     'protected' => false
         ], function ($api) {
 
-    $api->get('getallservices', '\App\Http\Controllers\API\UserController@getAllServices');
+    $api->post('getpostbyuser', '\App\Http\Controllers\API\UserController@get_post_by_user');
+    $api->get('getallpost', '\App\Http\Controllers\API\UserController@get_all_post');
    
    
 });

@@ -148,42 +148,4 @@ class AdminController extends Controller {
         //
     }
 
-    public function posts() {
-        return view('admin::post/index');
-    }
-
-     public function createPosts() {
-        return view('admin::post/create');
-    }
-
-    public function postsAdd() {
-        $validator = Validator::make($request->all(), [
-            'user_id' => 'required',
-            'title' => 'required|string|max:100',
-            'description' => 'required|string|max:100',
-            'category' => 'required|string',
-            
-            ], [
-            'user_id.required' => 'Please select user id',
-            'title.required' => 'Please enter title',  
-            'description.required' => 'Please enter description',
-            'category.required' => 'Please enter main category',
-            
-        ]);
-        if ($validator->fails()) {
-            return redirect()->back()->withInput($request->all())->withErrors($validator->errors());
-        } else {
-            try{
-                $data = $request->all();
-                // Post::create($data);                
-                return redirect()->back()->with('success',"Post Added Successfully!.");
-            } catch (\Exception $e) {
-                dd($e);
-                return false;
-            } 
-        }
-    }
-
-    
-
 }

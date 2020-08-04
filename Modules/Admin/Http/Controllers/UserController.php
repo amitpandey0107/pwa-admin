@@ -20,11 +20,9 @@ class UserController extends Controller {
      * Display a listing of the resource.
      * @return Response
      */
-    public function consultantList() {
-        $result = User::whereHas('roles', function ($query) {
-                    $query->where('role_id', '=', 3);
-                })->get();
-        return view('admin::users/consultants/index', compact('result'));
+    public function index() {
+        $result = User::get();
+        return view('admin::users/index', compact('result'));
     }
 
     /**
@@ -32,10 +30,8 @@ class UserController extends Controller {
      * @return Response
      */
     public function create() {
-        $emanager = User::whereHas('roles', function ($query) {
-            $query->where('role_id', '=', 2);
-        })->get();
-        return view('admin::users/consultants/create', compact('emanager'));
+       
+        return view('admin::users/create');
     }
 
     /**
@@ -45,22 +41,17 @@ class UserController extends Controller {
      */
     public function store(Request $request) {
         $validator = Validator::make($request->all(), [
-            'firstname' => 'required|string|max:45',
-            'surname' => 'required|string|max:45',
-            'email' => 'required|email|unique:users',
-            'mobile_number' => 'required|numeric|min:0|not_in:0|unique:users',
+            'firstname' => 'required|string|max:100',
+            'lastname' => 'required|string|max:100',
+            'email' => 'required',            
             'date_of_birth' => 'required',
-            'extension_manager' => 'required',
-            'gender' => 'required|string|max:10'
+            'gender' => 'required'
                 ], [
             'firstname.required' => 'Please enter first name',
-            'surname.required' => 'Please enter surname',
-            'email.required' => 'Please enter email address',
-            'email.unique' => 'Please enter unique email address',
-            'mobile_number.required' => 'Please enter phone number',
+            'lastname.required' => 'Please enter lastname',
+            'email.required' => 'Please enter email address',           
             'date_of_birth.required' => 'Please select date of birth',
-            'gender.required' => 'Please select city',
-            'extension_manager.required' => 'please select extension manager'
+            'gender.required' => 'Please select gender',
         ]);
 
         if ($validator->fails()) {
@@ -68,50 +59,28 @@ class UserController extends Controller {
         } else {
             try {
                 $data = $request->all();
-
-                $data['extension_manager'] = json_encode($data['extension_manager']);
-
-                $data['name'] = trim($data['firstname']).' '.trim($data['surname']);
-
-                
-
-                // Generate Password
+                $data['name'] = trim($data['firstname']).' '.trim($data['lastname']);
                 $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' . '0123456789!@#$%^&*()';
                 $str = '';
                 $max = strlen($chars) - 1;
                 for ($i = 0; $i < 10; $i++) {
                     $str .= $chars[random_int(0, $max)];
                 }
-                $data['password'] = Hash::make($str);
-                //unset($data['role_id']);
-
+                $data['password'] = Hash::make($str);     
+                $data['status'] = 1;
+                $data['address'] = '';
                 
                 $userId = User::create($data);
                 
                 $roleData = [
                     'user_id' => $userId->id,
-                    'role_id' => 3
+                    'role_id' => 1
                 ];
                 RoleUser::insert($roleData);
-                $body = [
-                    'name' => $request->name,
-                    'email' => $request->email,
-                    'password' => $str
-                ];
 
-                
-
-                Mail::send('emails.email_verification', $body, function ($message) use ($request) {
-                    $message->from(env('MAIL_FROM_ADDRESS'), 'Farmer');
-                    $message->to($request->email);
-                    $message->subject('Farmer : ' . $request->name . ' welcome to Farmer');
-                });
-                
-
-                
-                return \Redirect::route('consultants')->with('success', "Consultant Added Successfully.");
+                return \Redirect::route('user-add')->with('success', "User Added Successfully.");
             } catch (\Exception $e) {
-                // dd($e);
+                dd($e);
                 return false;
             }
         }

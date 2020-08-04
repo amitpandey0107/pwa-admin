@@ -14,6 +14,12 @@
                 </a>
             </li>          
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('users')}}">
+                    <i class="material-icons">people_alt</i>
+                    <p> Manage Users </p>
+                </a>
+            </li> 
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('post')}}">
                     <i class="material-icons">people_alt</i>
                     <p> Manage Post </p>

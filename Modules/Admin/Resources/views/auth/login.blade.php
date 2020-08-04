@@ -2,12 +2,10 @@
 <html lang="en">
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <head>
-        <meta charset="utf-8" />
-        <link rel="apple-touch-icon" href="{{ asset('images/favicon-32x32.png') }}" sizes="32x32"/>
-        <link rel="icon" type="image/png" href="{{ asset('images/favicon-16x16.png')}}"  sizes="16x16" />
+        <meta charset="utf-8" />        
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>
-            Farmer Admin login
+            PWA Admin Login
         </title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
         <!-- Extra details for Live View on GitHub Pages -->
@@ -38,10 +36,7 @@
                         @endif
                         <div class="card card-login card-hidden">
                             <div class="card-header card-header-rose text-center" style="background: linear-gradient(60deg,#7dbb57,#368bbe);">
-                                <h4 class="card-title">
-                                    Farmer
-                                    <!--<img src="{{ asset('images/logo.png')}}"/>-->
-                                </h4>
+                                <h4 class="card-title">PWA</h4>
                             </div>
                             <div class="card-body ">
                                 <p class="card-description text-center"></p>
@@ -77,15 +72,6 @@
                                         @endif
                                     </div>
                                 </span>
-<!--                                <span class="bmd-form-group">
-                                    <div class="input-group">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                               <label class="form-check-label form-control" for="remember">
-                                            {{ __('Remember Me') }}
-                                        </label>
-                                    </div>
-                                </span>-->
                             </div>
                             <div class="card-footer justify-content-center">
                                 <a href="javascript:void()" class="btn btn-rose btn-link btn-lg">

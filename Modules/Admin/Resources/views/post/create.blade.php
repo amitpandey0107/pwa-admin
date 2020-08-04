@@ -109,6 +109,7 @@
                                                 <strong>{{ $errors->first('title') }}</strong>
                                             </span>
                                             @endif
+
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +118,7 @@
                                     <label class="col-sm-2 col-form-label">Description *</label>
                                     <div class="col-sm-10">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" name="description" id="description" maxlength="330" class="form-control required" autocomplete="off" value="{{ old('description') }}">
+                                            <input type="text" name="description" id="description" maxlength="500" class="form-control required" autocomplete="off" value="{{ old('description') }}">
                                             @if ($errors->has('description'))
                                             <span class="error" role="description">
                                                 <strong>{{ $errors->first('description') }}</strong>
@@ -130,7 +131,7 @@
                                     <label class="col-sm-2 col-form-label">Category *</label>
                                     <div class="col-sm-10">
                                         <div class="form-group bmd-form-group">
-                                            <input type="text" name="category" id="phone" maxlength="12" class="form-control required number" autocomplete="off" value="{{ old('category') }}">
+                                            <input type="text" name="category" id="category"  class="form-control required " autocomplete="off" value="{{ old('category') }}">
                                             @if ($errors->has('category'))
                                             <span class="error" role="category">
                                                 <strong>{{ $errors->first('category') }}</strong>
@@ -144,7 +145,7 @@
                                     <label class="col-sm-2 col-form-label">Thumbnail Image *</label>
                                     <div class="col-sm-10">
                                         <div class="form-group bmd-form-group">
-                                            <input type="file" name="file" id="file" accept="image/png, image/jpeg" />                                            
+                                            <input type="file" name="image" id="image" accept="image/png, image/jpeg" />                                            
                                         </div>
                                     </div>
                                 </div>

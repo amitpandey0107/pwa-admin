@@ -29,11 +29,15 @@ Route::group(['middleware' => 'Isadmin'], function () {
         Route::post('/admin-edit-profile', 'AdminController@admin_edit_profile')->name('admin-edit-profile');
         Route::post('/admin-change-password', 'AdminController@changePassword')->name('admin-change-password');
 
+        // User
+        Route::get('/users', 'UserController@index')->name('users');
+        Route::get('/user-add', 'UserController@create')->name('user-add');
+        Route::post('/user-add', 'UserController@store')->name('user-add');   
+
         // POST
-        Route::get('/post', 'AdminController@posts')->name('post');
-        Route::get('/post-add', 'AdminController@createPosts')->name('post-add');
-        Route::post('/post-add', 'AdminController@postsAdd')->name('post-add');
-        Route::post('/user-status/{slug}', 'AdminController@userStatus')->name('user-status');
+        Route::get('/post', 'PostsController@index')->name('post');
+        Route::get('/post-add', 'PostsController@create')->name('post-add');
+        Route::post('/post-add', 'PostsController@store')->name('post-add');        
         
     });
 });

@@ -21,6 +21,7 @@ use App\Password_reset;
 use App\Role;
 use App\RoleUser;
 use App\User;
+use App\Post;
 use App\Exports\PostExport;
 
 
@@ -278,25 +279,13 @@ class UserController extends Controller
             unset($data['password_confirmation']);
             $data['password'] = Hash::make($data['password']);
             $data['gender'] = ucwords($data['gender']);
-            $data['name'] = $fullname;
-            $data['mobile_number'] = '';
+            $data['name'] = $fullname;           
             $result = User::create($data);
             $roleData = [
                 'user_id' => $result->id,
                 'role_id' => 1
             ];
-            RoleUser::insert($roleData);
-            // $body = [
-            //     'name' => $fullname,
-            //     'email' => $request->email,
-            //     'password' => $request->password
-            // ];
-
-            // Mail::send('emails.email_verification', $body, function ($message) use ($request) {
-            //     $message->from(env('MAIL_FROM_ADDRESS'), 'PWA');
-            //     $message->to($request->email);
-            //     $message->subject('PWA : ' . $request->name . ' welcome to PWA');
-            // });
+            RoleUser::insert($roleData);            
             if ($result) {
                 return response()->json([ 
                     'status_code' => 200,
@@ -318,6 +307,67 @@ class UserController extends Controller
             ]);
         }
         return response()->json(compact('token', 'data'));
+    }
+
+
+    /* ==================================
+    Get Post By User
+    =================================== */
+    public function get_post_by_user(Request $request) {
+        $data = $request->all();
+        $validator = Validator::make($data, [
+            'user_id' => 'required',
+        ]);
+        if ($validator->fails()) {
+            return response()->json([
+                'status_code' => 500,
+                'response' => 'error',
+                'message' => implode(",",$validator->messages()->all()),
+            ]);
+        }
+        try{
+
+            $get_post = Post::where('user_id', $data['user_id'])->get();
+            $data = array();
+            return response()->json([
+                'status_code' => 200,
+                'response' => "success",
+                'message' => 'post listed successfully!',
+                'data' => $get_post
+            ]);             
+            
+        } catch(Exaption $e){
+            return response()->json([
+                'status_code' => 500,
+                'response' => "error",
+                'message' => 'Technical error, please contact to admin',
+            ]);  
+        }
+    }
+
+
+    /* ==================================
+    GET ALL POST
+    =================================== */
+    public function get_all_post(Request $request) {        
+        try{
+
+            $get_post = Post::get();
+            $data = array();
+            return response()->json([
+                'status_code' => 200,
+                'response' => "success",
+                'message' => 'post listed successfully!',
+                'data' => $get_post
+            ]);             
+            
+        } catch(Exaption $e){
+            return response()->json([
+                'status_code' => 500,
+                'response' => "error",
+                'message' => 'Technical error, please contact to admin',
+            ]);  
+        }
     }
 
 
