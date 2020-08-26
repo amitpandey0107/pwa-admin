@@ -45,31 +45,24 @@ class PostsController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => 'required|string|max:100',
             'description' => 'required|string|max:1000',
-            'category' => 'required|string',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5120',
+            'start' => 'required|string',
+            'end' => 'required|string',
             
             ], [
             'title.required' => 'Please enter title',  
             'description.required' => 'Please enter description',
-            'category.required' => 'Please enter main category',
-            'image' => 'please enter image in jpeg,png,jpg,gif,svg format',
+            'start.required' => 'Please enter main category',
+            'end' => 'please enter image in jpeg,png,jpg,gif,svg format',
             
         ]);
         if ($validator->fails()) {
             return redirect()->back()->withInput($request->all())->withErrors($validator->errors());
         } else {
             try{
-                $data = $request->all();
-                $fileName = null;
-                if (request()->hasFile('image')) {
-                    $file = request()->file('image');
-                    $fileName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
-                    $file->move('./uploads/posts/', $fileName);  
-                    $data['image'] = $fileName;  
-                }
+                $data = $request->all();              
                 $data['user_id'] = $id = auth()->user()->id;                   
                 Post::create($data);                
-                return redirect()->back()->with('success',"Post Added Successfully!.");
+                return redirect()->back()->with('success',"Event Added Successfully!.");
             } catch (\Exception $e) {
                 dd($e);
                 return false;

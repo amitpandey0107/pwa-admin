@@ -28,6 +28,7 @@ $api->version('v1', [
 
     $api->post('getpostbyuser', '\App\Http\Controllers\API\UserController@get_post_by_user');
     $api->get('getallpost', '\App\Http\Controllers\API\UserController@get_all_post');
+    $api->post('addevent', '\App\Http\Controllers\API\UserController@add_event');
    
    
 });

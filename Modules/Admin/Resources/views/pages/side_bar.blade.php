@@ -21,8 +21,8 @@
             </li> 
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('post')}}">
-                    <i class="material-icons">people_alt</i>
-                    <p> Manage Post </p>
+                    <i class="material-icons">event</i>
+                    <p> Manage Events </p>
                 </a>
             </li>           
         </ul>

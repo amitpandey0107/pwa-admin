@@ -347,7 +347,7 @@ class UserController extends Controller
 
 
     /* ==================================
-    GET ALL POST
+    GET ALL Event
     =================================== */
     public function get_all_post(Request $request) {        
         try{
@@ -357,7 +357,7 @@ class UserController extends Controller
             return response()->json([
                 'status_code' => 200,
                 'response' => "success",
-                'message' => 'post listed successfully!',
+                'message' => 'Events listed successfully!',
                 'data' => $get_post
             ]);             
             
@@ -370,6 +370,49 @@ class UserController extends Controller
         }
     }
 
+
+    /* ==================================
+    REGISTER EVENT
+    =================================== */
+    public function add_event(Request $request) {
+        $validator = Validator::make($request->all(), [
+            'title' => 'required|string|max:255',
+            'description' => 'required|string|max:255',
+            'start' => 'required|string|max:255',
+            'end' => 'required|string|max:255',
+        ]);
+        if ($validator->fails()) {
+            return response()->json([
+                'status_code' => 500,
+                'response' => 'Error',
+                'message' => implode(",",$validator->messages()->all()),
+            ]);
+        }
+        try{
+            $data = $request->all();                  
+            $result = Post::create($data);            
+            if ($result) {
+                return response()->json([ 
+                    'status_code' => 200,
+                    'response' => 'Success',
+                    'message' => 'Event registration successfully!',
+                ]);
+            } else {
+                return response()->json([ 
+                    'status_code' => 400,
+                    'response' => 'Error',
+                    'message' => 'Event registration failed!',
+                ]);
+            }
+        } catch (JWTAuthException $e) {
+            return response()->json([
+                'status_code' => 400,
+                'response' => 'Error',
+                'message' => 'failed to create token',
+            ]);
+        }
+        return response()->json(compact('token', 'data'));
+    }
 
 }
 // Class ends
